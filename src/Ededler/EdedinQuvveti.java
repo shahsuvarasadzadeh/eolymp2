@@ -1,3 +1,5 @@
+package Ededler;
+
 import java.util.Scanner;
 
 public class EdedinQuvveti {
