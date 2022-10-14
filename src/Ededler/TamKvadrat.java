@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class TamKvadrat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long n = sc.nextLong();
-        int a=(int) Math.pow(n,2);
-        if (a==Math.pow(n,2)) {
-            System.out.println("Ok");
+        double n = sc.nextDouble();
+        int a = (int) Math.sqrt(n);
+        if (a == Math.sqrt(n)) {
+            System.out.println(a);
         } else {
             System.out.println("No");
         }
