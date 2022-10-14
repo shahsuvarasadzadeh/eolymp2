@@ -7,14 +7,23 @@ public class M8889 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int a = 0;
-        int sum=0;
+        int sum = 0;
         while (n > 0) {
-            if ((n % 10) % 2 == 0) {
-
-            } else {
-                n = n / 10;
+            a = n % 10;
+            if (a % 2 == 0) {
+                a++;
             }
+            sum = sum * 10 + a;
+            n = n / 10;
         }
-        System.out.println(sum);
+        n=0;
+        while (sum > 0) {
+            a = sum% 10;
+            n = n * 10 + a;
+            sum = sum / 10;
+        }
+
+
+        System.out.println(n);
     }
 }
